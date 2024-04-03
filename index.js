@@ -4,7 +4,7 @@ const mongoose=require('mongoose');
 const app = express()
 const port = process.env.PORT || 8000
 const Expense=require('./expense');
-mongoose.connect('mongodb+srv://shridurgavijiram:shri1704@cluster0.v29c686.mongodb.net/newDb?retryWrites=true&w=majority',{
+mongoose.connect('mongoDB URL',{
   useUnifiedTopology: true
 });
 app.get('/', async(req, res) => {
